@@ -1,0 +1,74 @@
+#container{
+    -fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 55% , #683ba8, #28065a);
+}
+#title{
+    -fx-font: 75px "Impact";
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(#F7ECDB 20%, #FFC876 65%, #F7ECDB 100%);
+    -fx-padding: 50px;
+}
+.label{
+    -fx-font: 30px "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-font: 30px "Roboto";
+}
+
+.button, #guessBox{
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-pref-width: 200px;
+    -fx-font: 30px "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #12C1E5, #07A3E7);
+}
+
+#msg {
+    -fx-font: 30px "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-opacity: 50%;
+}
+
+
+
+.radio-button{
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-pref-width: 200px;
+    -fx-font: 30px "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #12C1E5, #07A3E7);
+}
+
+.radio-button > .radio {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0px;
+    -fx-padding: 0.0em; /* 4 8 4 8 */
+}
+.radio-button:selected > .radio > .dot {
+    -fx-background-color: transparent;
+}
+
+#letterBox{
+    -fx-max-height: 100;
+    -fx-max-width: 80;
+    -fx-font-family: Impact;
+}
+
+#key{
+    -fx-background-color: linear-gradient(to bottom, #12C1E5, #683BA8);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto";
+    -fx-width: 80;
+    -fx-height: 80;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane id="container" fx:id="guessScreenContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuessScreenController">
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+          <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" valignment="CENTER" />
+        </rowConstraints>
+         <children>
+            <VBox id="guessBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="146.0">
+               <children>
+                  <Label fx:id="msgDisplay" text="Guesses" />
+                  <TextField alignment="CENTER" editable="false" prefHeight="65.0" prefWidth="100.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <Label id="msg" alignment="CENTER" contentDisplay="CENTER" text="Label" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" />
+            <StackPane GridPane.columnIndex="2">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="UN" />
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <VBox fx:id="centerVBox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane fx:id="lettersDisplayWrapper" alignment="CENTER" />
+            <VBox fx:id="keyboardWrapper" alignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></VBox>
+         </children></VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>
